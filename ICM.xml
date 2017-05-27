@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sample Test Suite" verbose="1" >
+  <test name="Method Test Cases" >
+    <classes>
+       <class name="icm.Category">
+        <methods>
+        <include name="Login" />
+        <include name="company" />
+        <include name="category" />
+        <include name="location" />
+        <include name="catlocrelation" />
+        <include name="user" />
+        <include name="usergroup" />
+        <include name="uusergrouprelation" />
+        <include name="template" />
+        <include name="contract" />
+      </methods>
+       </class>
+    </classes>
+  </test>
+</suite>

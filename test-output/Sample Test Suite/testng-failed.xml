@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sample Test Suite]">
+  <test name="Method Test Cases(failed)">
+    <classes>
+      <class name="icm.Category">
+        <methods>
+          <include name="template"/>
+          <include name="uusergrouprelation"/>
+          <include name="contract"/>
+          <include name="setup"/>
+          <include name="usergroup"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- icm.Category -->
+    </classes>
+  </test> <!-- Method Test Cases(failed) -->
+</suite> <!-- Failed suite [Sample Test Suite] -->

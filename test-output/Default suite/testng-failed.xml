@@ -3,12 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="icm.Requestor">
+      <class name="icm.Category">
         <methods>
-          <include name="login"/>
-          <include name="setUp"/>
+          <include name="template"/>
+          <include name="uusergrouprelation"/>
+          <include name="contract"/>
+          <include name="category"/>
+          <include name="catlocrelation"/>
+          <include name="setup"/>
+          <include name="location"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- icm.Requestor -->
+      </class> <!-- icm.Category -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
