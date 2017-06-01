@@ -4,16 +4,16 @@
     <classes>
        <class name="icm.ICMWEB">
         <methods>
-        <include name="Login" />
-        <exclude name="company" />
-        <exclude name="category" />
-        <exclude name="location" />
-        <exclude name="catlocrelation" />
-        <exclude name="user" />
-        <exclude name="usergroup" />
-        <include name="uusergrouprelation" />
-        <exclude name="template" />
-        <exclude name="contract" />
+        <include name="Login"/>
+        <include name="Company"/>
+        <include name="Category"/>
+        <include name="Location"/>
+        <include name="CategoryLocationRelation"/>
+        <include name="Template"/>
+        <include name="User"/>
+        <include name="UserGroup"/>
+        <include name="UserGroupRelation"/>
+        <include name="Contract"/>
       </methods>
        </class>
     </classes>
