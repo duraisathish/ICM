@@ -2,18 +2,18 @@
 <suite name="Sample Test Suite" verbose="1" >
   <test name="Method Test Cases" >
     <classes>
-       <class name="icm.Category">
+       <class name="icm.ICMWEB">
         <methods>
         <include name="Login" />
-        <include name="company" />
-        <include name="category" />
-        <include name="location" />
-        <include name="catlocrelation" />
-        <include name="user" />
-        <include name="usergroup" />
+        <exclude name="company" />
+        <exclude name="category" />
+        <exclude name="location" />
+        <exclude name="catlocrelation" />
+        <exclude name="user" />
+        <exclude name="usergroup" />
         <include name="uusergrouprelation" />
-        <include name="template" />
-        <include name="contract" />
+        <exclude name="template" />
+        <exclude name="contract" />
       </methods>
        </class>
     </classes>

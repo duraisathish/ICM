@@ -88,7 +88,7 @@ public class Requestor {
 		 driver.findElement(By.xpath("//*[@class='android.widget.Button' and @content-desc='LOGIN ']")).click();
 		
 	 }
-	 @Test(priority=2,enabled=false)
+	 @Test(priority=2,enabled=true)
 	 public void ClickonNewRequest()
 	 {
 		 driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
@@ -98,7 +98,7 @@ public class Requestor {
 		 
 		 NewRequest.click();		 
 	 }
-	 @Test(priority=3,enabled=false)
+	 @Test(priority=3,enabled=true)
 	 public void ChooseFaultType()
 	 {
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
@@ -141,7 +141,7 @@ public class Requestor {
 		 LiftA.click();
 	 }
 	 
-	 @Test(priority=4,enabled=false)
+	 @Test(priority=4,enabled=true)
 	 public void Priority()
 	 {
 		 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -193,7 +193,7 @@ public class Requestor {
 	 }	 
 	 
 	 
-	 @Test(priority=5,enabled=false)
+	 @Test(priority=5,enabled=true)
 	 public void InitialInformation()
 	 {
 		 
@@ -227,7 +227,7 @@ public class Requestor {
 		 
 	 }
 	 
-	 @Test(priority=6,enabled=false)
+	 @Test(priority=6,enabled=true)
 	 public void CheckBoxInformation()
 	 {
 		 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -257,7 +257,7 @@ public class Requestor {
 		 
 	 }
 	 
-	 @Test(priority=7,enabled=false)
+	 @Test(priority=7,enabled=true)
 	 public void InventoryCheck()
 	 {
 		 //Select DropDown
@@ -297,7 +297,7 @@ public class Requestor {
 		 
 	 }
 	 
-	 @Test(priority=8,enabled=false)
+	 @Test(priority=8,enabled=true)
 	 public void SubmitRequest()
 	 {
 		 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

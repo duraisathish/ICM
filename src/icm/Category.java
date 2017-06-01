@@ -105,7 +105,7 @@ public class Category {
 		wait3.until(ExpectedConditions.elementToBeClickable(By.id("field_name")));		
 		WebElement username = driver.findElement(By.id("field_name"));
 		//provide new company name 
-		username.sendKeys("newcom9");
+		username.sendKeys("newcom14");
 		
 		WebDriverWait wait4 = new WebDriverWait(driver, 200);
 		wait4.until(ExpectedConditions.elementToBeClickable(By.id("field_street_address")));		
@@ -150,7 +150,7 @@ public class Category {
 		wait2.until(ExpectedConditions.elementToBeClickable(By.id("field_name")));	
 		//provide new category name 
 		WebElement name = driver.findElement(By.id("field_name"));
-		name.sendKeys("newcat9");
+		name.sendKeys("newcat14");
 		
 		WebDriverWait wait3 = new WebDriverWait(driver, 200);
 		wait3.until(ExpectedConditions.elementToBeClickable(By.id("field_description")));		
@@ -158,8 +158,8 @@ public class Category {
 		//provide description
 		description.sendKeys("Qa category description");
 		
-		WebDriverWait wait4 = new WebDriverWait(driver, 200);
-		wait4.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/div/form/div[3]/button[3]")));
+		/*WebDriverWait wait4 = new WebDriverWait(driver, 200);
+		wait4.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/div/form/div[3]/button[3]")));*/
 		
 		saveclose();
 		
@@ -184,7 +184,7 @@ public class Category {
 		wait1.until(ExpectedConditions.elementToBeClickable(By.id("field_name")));
 		//provide new location name
 		WebElement name = driver.findElement(By.id("field_name"));
-		name.sendKeys("newloc9");
+		name.sendKeys("newloc14");
 		
 		WebDriverWait wait2 = new WebDriverWait(driver, 200);
 		wait2.until(ExpectedConditions.elementToBeClickable(By.id("desc")));
@@ -222,7 +222,7 @@ public class Category {
 		wait1.until(ExpectedConditions.elementToBeClickable(By.id("searchQuery")));	
 		//Search already existing category
 		WebElement catname = driver.findElement(By.id("searchQuery"));
-		catname.sendKeys("newcat9");
+		catname.sendKeys("newcat14");
 		
 		//Search the provide category 
 		WebElement search = driver.findElement(By.xpath("//*[@id='searchForm']/form/button[1]"));
@@ -257,7 +257,7 @@ public class Category {
 		//Click on the Add location button 
 		
 		WebElement addlocation = driver.findElement(By.xpath("//*[@id='disableAllCategoryLocationElement']/div[2]/typeahead/div/ul[1]/li/input"));
-		addlocation.sendKeys("newloc9");
+		addlocation.sendKeys("newloc14");
 		
 		//Auto search and location details and select 
 		WebElement addloca = driver.findElement(By.xpath("//*[@id='disableAllCategoryLocationElement']/div[2]/typeahead/div/ul[2]"));
@@ -292,15 +292,15 @@ public class Category {
 		driver.switchTo().defaultContent();
 		
 		//Enter the user name
-		driver.findElement(By.xpath("//*[@id='details']/div[3]/div[1]/input")).sendKeys("newus9");
+		driver.findElement(By.xpath("//*[@id='details']/div[3]/div[1]/input")).sendKeys("newus14");
 		//Enter the first name
 		driver.findElement(By.xpath("//*[@id='details']/div[4]/div[1]/input")).sendKeys("newus");
 		//Enter the last name
 		driver.findElement(By.xpath("//*[@id='details']/div[5]/div[1]/input")).sendKeys("newus");
 		//Enter the email
-		driver.findElement(By.xpath("//*[@id='details']/div[6]/div[1]/input")).sendKeys("newus9@localhost");	
+		driver.findElement(By.xpath("//*[@id='details']/div[6]/div[1]/input")).sendKeys("newus14@localhost");	
 		//Search the existing company and select 
-		driver.findElement(By.name("CompanyAutocomplete")).sendKeys("newcom9" + Keys.DOWN + Keys.ENTER);
+		driver.findElement(By.name("CompanyAutocomplete")).sendKeys("newcom14" + Keys.DOWN + Keys.ENTER);
 		}
 		catch(Exception e)
 		{
@@ -321,6 +321,8 @@ public class Category {
 	@Test(priority=7,enabled=true)
 	public void usergroup() throws InterruptedException {
 		
+		Thread.sleep(2000);		
+		driver.switchTo().defaultContent();
 		driver.findElement(By.xpath("/html/body/div[1]/nav/div/div[2]/ul/li[2]/a/span[2]")).click();
 		
 		try{			
@@ -336,7 +338,7 @@ public class Category {
 		driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
 		driver.switchTo().defaultContent();
 		//Enter the user group name
-		driver.findElement(By.xpath("//*[@id='field_name']")).sendKeys("newusg9");
+		driver.findElement(By.xpath("//*[@id='field_name']")).sendKeys("newusg14");
 		}
 		catch(Exception e)
 		{
@@ -388,7 +390,7 @@ public class Category {
         ugroup.click();
         
         //Search existing user group name and select the user group
-        driver.findElement(By.name("UsergroupAutocomplete")).sendKeys("newusg9" + Keys.DOWN + Keys.ENTER);
+        driver.findElement(By.name("UsergroupAutocomplete")).sendKeys("newusg14" + Keys.DOWN + Keys.ENTER);
         WebDriverWait wait5= new WebDriverWait(driver, 200);
         wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='usergroup']/div[1]/div/div[1]/div/div/button")));        
         
@@ -426,11 +428,11 @@ public class Category {
 		addtemplate.click();
 				
 		//Enter the new template name 
-		driver.findElement(By.id("field_Name")).sendKeys("newtemp9");
+		driver.findElement(By.id("field_Name")).sendKeys("newtemp14");
 		//Enter the description
 		driver.findElement(By.id("field_Description")).sendKeys("Comments for qa temp");
 		//Search and select the existing category 
-		driver.findElement(By.name("categoryAutocomplete")).sendKeys("newcat9" + Keys.DOWN + Keys.ENTER);
+		driver.findElement(By.name("categoryAutocomplete")).sendKeys("newcat14" + Keys.DOWN + Keys.ENTER);
 	
      
         WebDriverWait wait2 = new WebDriverWait(driver, 200);
@@ -474,7 +476,7 @@ public class Category {
         wait7.until(ExpectedConditions.elementToBeClickable(By.id("field_usergroup"))); 
         //Select the drop down from user group
         WebElement ugroup = driver.findElement(By.id("field_usergroup"));
-        ugroup.sendKeys("newusg9");
+        ugroup.sendKeys("newusg14");
 		}
 		catch(Exception e)
 		{
@@ -500,14 +502,14 @@ public class Category {
 		driver.findElement(By.id("disableContractCreateButton")).click();
 		
 		//Enter the new name for contract 
-		driver.findElement(By.id("field_name")).sendKeys("newcontr9");
+		driver.findElement(By.id("field_name")).sendKeys("newcontr14");
 		//Enter the existing company name and select
-		driver.findElement(By.name("CompanyAutocomplete")).sendKeys("newcom9" + Keys.DOWN + Keys.ENTER);
+		driver.findElement(By.name("CompanyAutocomplete")).sendKeys("newcom14" + Keys.DOWN + Keys.ENTER);
 		//Enter the existing category and select 
-		driver.findElement(By.name("CategoryAutocomplete")).sendKeys("newcat9" + Keys.DOWN + Keys.ENTER);
+		driver.findElement(By.name("CategoryAutocomplete")).sendKeys("newcat14" + Keys.DOWN + Keys.ENTER);
 	    
 		//Enter the existing location and select 
-        driver.findElement(By.xpath("//*[@id='details']/div[4]/div[1]/typeahead/div/ul[1]/li/input")).sendKeys("newloc9" + Keys.DOWN + Keys.ENTER);
+        driver.findElement(By.xpath("//*[@id='details']/div[4]/div[1]/typeahead/div/ul[1]/li/input")).sendKeys("newloc14" + Keys.DOWN + Keys.ENTER);
         //Enter the start date
         driver.findElement(By.xpath("//*[@id='field_start_date']")).sendKeys("01-05-2017");
         //Enter the end date
