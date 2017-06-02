@@ -1,61 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75464" started-at="2017-06-01T14:46:32Z" finished-at="2017-06-01T14:47:48Z">
+  <suite name="Default suite" duration-ms="144215" started-at="2017-06-02T16:19:03Z" finished-at="2017-06-02T16:21:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75464" started-at="2017-06-01T14:46:32Z" finished-at="2017-06-01T14:47:48Z">
-      <class name="icm.ICMWEB">
-        <test-method status="PASS" signature="setup()[pri:0, instance:icm.ICMWEB@47e2e487]" name="setup" is-config="true" duration-ms="8" started-at="2017-06-01T20:16:32Z" finished-at="2017-06-01T20:16:32Z">
+    <test name="Default test" duration-ms="144215" started-at="2017-06-02T16:19:03Z" finished-at="2017-06-02T16:21:28Z">
+      <class name="icm.CreateNewRequest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:icm.CreateNewRequest@4501b7af]" name="setUp" is-config="true" duration-ms="19503" started-at="2017-06-02T21:49:03Z" finished-at="2017-06-02T21:49:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Login()[pri:1, instance:icm.ICMWEB@47e2e487]" name="Login" duration-ms="10268" started-at="2017-06-01T20:16:32Z" finished-at="2017-06-01T20:16:42Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Login()[pri:1, instance:icm.CreateNewRequest@4501b7af]" name="Login" duration-ms="45171" started-at="2017-06-02T21:49:23Z" finished-at="2017-06-02T21:50:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Company()[pri:2, instance:icm.ICMWEB@47e2e487]" name="Company" duration-ms="3267" started-at="2017-06-01T20:16:42Z" finished-at="2017-06-01T20:16:46Z">
+        <test-method status="PASS" signature="ClickonNewRequest()[pri:2, instance:icm.CreateNewRequest@4501b7af]" name="ClickonNewRequest" duration-ms="3257" started-at="2017-06-02T21:50:08Z" finished-at="2017-06-02T21:50:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Company -->
-        <test-method status="PASS" signature="Category()[pri:3, instance:icm.ICMWEB@47e2e487]" name="Category" duration-ms="3472" started-at="2017-06-01T20:16:46Z" finished-at="2017-06-01T20:16:49Z">
+        </test-method> <!-- ClickonNewRequest -->
+        <test-method status="PASS" signature="ChooseFaultType()[pri:3, instance:icm.CreateNewRequest@4501b7af]" name="ChooseFaultType" duration-ms="9497" started-at="2017-06-02T21:50:11Z" finished-at="2017-06-02T21:50:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Category -->
-        <test-method status="PASS" signature="Location()[pri:4, instance:icm.ICMWEB@47e2e487]" name="Location" duration-ms="2287" started-at="2017-06-01T20:16:49Z" finished-at="2017-06-01T20:16:51Z">
+        </test-method> <!-- ChooseFaultType -->
+        <test-method status="PASS" signature="Priority()[pri:4, instance:icm.CreateNewRequest@4501b7af]" name="Priority" duration-ms="14571" started-at="2017-06-02T21:50:21Z" finished-at="2017-06-02T21:50:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Location -->
-        <test-method status="PASS" signature="CategoryLocationRelation()[pri:5, instance:icm.ICMWEB@47e2e487]" name="CategoryLocationRelation" duration-ms="2415" started-at="2017-06-01T20:16:51Z" finished-at="2017-06-01T20:16:54Z">
+        </test-method> <!-- Priority -->
+        <test-method status="PASS" signature="InitialInformation()[pri:5, instance:icm.CreateNewRequest@4501b7af]" name="InitialInformation" duration-ms="16729" started-at="2017-06-02T21:50:35Z" finished-at="2017-06-02T21:50:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CategoryLocationRelation -->
-        <test-method status="PASS" signature="Template()[pri:6, instance:icm.ICMWEB@47e2e487]" name="Template" duration-ms="32200" started-at="2017-06-01T20:16:54Z" finished-at="2017-06-01T20:17:26Z">
+        </test-method> <!-- InitialInformation -->
+        <test-method status="PASS" signature="CheckBoxInformation()[pri:6, instance:icm.CreateNewRequest@4501b7af]" name="CheckBoxInformation" duration-ms="12664" started-at="2017-06-02T21:50:52Z" finished-at="2017-06-02T21:51:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Template -->
-        <test-method status="PASS" signature="User()[pri:7, instance:icm.ICMWEB@47e2e487]" name="User" duration-ms="6033" started-at="2017-06-01T20:17:26Z" finished-at="2017-06-01T20:17:32Z">
+        </test-method> <!-- CheckBoxInformation -->
+        <test-method status="PASS" signature="InventoryCheck()[pri:7, instance:icm.CreateNewRequest@4501b7af]" name="InventoryCheck" duration-ms="6174" started-at="2017-06-02T21:51:05Z" finished-at="2017-06-02T21:51:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User -->
-        <test-method status="PASS" signature="UserGroup()[pri:8, instance:icm.ICMWEB@47e2e487]" name="UserGroup" duration-ms="2188" started-at="2017-06-01T20:17:32Z" finished-at="2017-06-01T20:17:34Z">
+        </test-method> <!-- InventoryCheck -->
+        <test-method status="PASS" signature="SubmitRequest()[pri:8, instance:icm.CreateNewRequest@4501b7af]" name="SubmitRequest" duration-ms="16605" started-at="2017-06-02T21:51:11Z" finished-at="2017-06-02T21:51:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserGroup -->
-        <test-method status="PASS" signature="UserGroupRelation()[pri:9, instance:icm.ICMWEB@47e2e487]" name="UserGroupRelation" duration-ms="4586" started-at="2017-06-01T20:17:34Z" finished-at="2017-06-01T20:17:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserGroupRelation -->
-        <test-method status="PASS" signature="Contract()[pri:10, instance:icm.ICMWEB@47e2e487]" name="Contract" duration-ms="6966" started-at="2017-06-01T20:17:39Z" finished-at="2017-06-01T20:17:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Contract -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:icm.ICMWEB@47e2e487]" name="quit" is-config="true" duration-ms="1740" started-at="2017-06-01T20:17:46Z" finished-at="2017-06-01T20:17:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- icm.ICMWEB -->
+        </test-method> <!-- SubmitRequest -->
+      </class> <!-- icm.CreateNewRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
